@@ -1,0 +1,15 @@
+<h1>{{title}}</h1>
+<form (submit)="start()">
+    <button>Start</button>
+    <input type="number" [(ngModel)]="noOfPlayer" value="100" placeholder="No. player"/>
+</form>
+<ul class="items origin" [ngClass]="{'done': done}">
+    <li *ngFor="#item of origin" [ngClass]="{'hidden': item.dead}">
+        {{item.title}}
+    </li>
+</ul>
+<ul class="items dead" [ngClass]="{'done': done}">
+    <li *ngFor="#item of deadItems">
+        {{item.title}}
+    </li>
+</ul>

@@ -1,0 +1,4 @@
+INSTRUCTION
+1. Run npm install to install dependency
+2. Run gulp serve
+3. Go to http://localhost:3000
